@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Case Study</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+  	<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="all">
+		<header id="header">
+			<section id="menu">
+		        <nav>
+		            <ul>
+		                <li><a href="#header">Home</a></li>
+		                <li><a href="#features">Features</a></li>
+		                <li><a href="#services">Services</a></li>
+		                <li><a href="#testimonial">Testimonial</a></li>
+		                <li><a href="#footer">Meet Us</a></li>
+		            </ul>
+		        </nav>
+    		</section>
+			<img src="images/logo.png" alt="logo" class="logo">
+			<div class="container banner">
+				<h1>Hair Studio</h1>
+            	<p>Style Your Hair Is Style Your Life</p>
+            	<div class="find">
+            		<a href="#"><span></span> Order</a>
+            	</div>
+			</div>
+			<div id="button">
+        		<img src="images/menu.png" id="anhnut">
+    		</div>
+			
+    		<script>
+		        var menuBtn = document.getElementById("button");
+		        var sideNav = document.getElementById("menu");
+		        var menu = document.getElementById("anhnut");
+		        sideNav.style.left = "-200px";
+		        menuBtn.onclick = function () {
+		            if (sideNav.style.left == "-200px") {
+		                sideNav.style.left = "0";
+		                menu.src = "images/close.png";
+		            } else {
+		                sideNav.style.left = "-200px";
+		                menu.src = "images/menu.png"
+		            }
+		        }
+		        var scroll = new SmoothScroll('a[href*="#"]', {
+		            speed: 1000,
+		            speedAsDuration: true
+		        });
+		    </script>
+		</header>
+		<div class="content">
+			<div id="features">
+					<div class="title">
+			            <p>FEATURES</p>
+			            <h1>Why Choose Us</h1>
+			        </div>
+			        <div class="ft-box">
+			        	<div class="ft-img">
+                			<img src="images/barber-man.jpg">
+            			</div>
+				        <div class="ft">
+				            <h1>Experienced Staff</h1>
+				            <div class="ft-content">
+				                <div class="ft-icon">
+				                    <i class="icon bi-shield-shaded"></i>
+				                </div>
+				                <div class="ft-text">
+				                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+				                       Praesent erat mi, dignissim vel malesuada quis, lacinia vel diam.</p>
+				                </div>
+				            </div>
+				            <h1>Pre Booking Online</h1>
+				            <div class="ft-content">
+				                <div class="ft-icon">
+				                    <i class="icon bi-check2-square"></i>
+				                </div>
+				                <div class="ft-text">
+				                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+				                       Praesent erat mi, dignissim vel malesuada quis, lacinia vel diam.</p>
+				                </div>
+				            </div>
+				            <h1>Affordable Cost</h1>
+				            <div class="ft-content">
+				                <div class="ft-icon">
+				                    <i class="icon bi-currency-euro"></i>
+				                </div>
+				                <div class="ft-text">
+				                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+				                       Praesent erat mi, dignissim vel malesuada quis, lacinia vel diam.</p>
+				                </div>
+	                		</div>
+	            		</div>
+        			</div>
+			</div>
+
+
+			<div id="services">
+					<div class="title">
+				        <p>SERVICES</p>
+				        <h1>We Provider Better</h1>
+				    </div>
+				    <div class="sv-box">
+				        <div class="khung">
+				            <img src="images/pic-1.jpg">
+				            <div class="nenchim"></div>
+				            <div class="sv-content">
+				                <h3>Beard Trim</h3>
+				                <hr>
+				                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+				                   In iaculis dignissim lacus, non vestibulum velit facilisis in.</p>
+				            </div>
+				        </div>
+				        <div class="khung">
+				            <img src="images/pic-2.jpg">
+				            <div class="nenchim"></div>
+				            <div class="sv-content">
+				                <h3>Hair Cut</h3>
+				                <hr>
+				                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+				                   In iaculis dignissim lacus, non vestibulum velit facilisis in.</p>
+				            </div>
+				        </div>
+				        <div class="khung">
+				            <img src="images/pic-3.jpg">
+				            <div class="nenchim"></div>
+				            <div class="sv-content">
+				                <h3>Hair Styling</h3>
+				                <hr>
+				                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+				                   In iaculis dignissim lacus, non vestibulum velit facilisis in.</p>
+				            </div>
+				        </div>
+				        <div class="khung">
+				            <img src="images/pic-4.jpg">
+				            <div class="nenchim"></div>
+				            <div class="sv-content">
+				                <h3>Dry Shapoo</h3>
+				                <hr>
+				                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+				                   In iaculis dignissim lacus, non vestibulum velit facilisis in.</p>
+				            </div>
+				        </div>
+				    </div>
+			</div>
+
+
+			<div id="testimonial">
+				<div class="title">
+		            <p>TESTIMONIAL</p>
+		            <h1>What Client Says</h1>
+		        </div>
+		        <div class="tes-box">
+		            <div class="tes-cot">
+		                <div class="feedback">
+		                    <img src="images/img-1.jpg">
+		                    <div class="ttkh">
+		                        <h4>KEN NORMAN <i class="icon bi-twitter"></i></h4>
+		                        <small>@kennorman</small>
+		                    </div>
+		                </div>
+		                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+		                    In iaculis dignissim lacus, non vestibulum velit facilisis in.</p>
+		            </div>
+		            <div class="tes-cot">
+		                <div class="feedback">
+		                    <img src="images/img-2.jpg">
+		                    <div class="ttkh">
+		                        <h4>KARIAN NICK <i class="icon bi-twitter"></i></h4>
+		                        <small>@kariannick</small>
+		                    </div>
+		                </div>
+		                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+		                    In iaculis dignissim lacus, non vestibulum velit facilisis in.</p>
+		            </div>
+		            <div class="tes-cot">
+		                <div class="feedback">
+		                    <img src="images/img-3.jpg">
+		                    <div class="ttkh">
+		                        <h4>DIARA JAMES <i class="icon bi-twitter"></i></h4>
+		                        <small>@diarajames</small>
+		                    </div>
+		                </div>
+		                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+		                    In iaculis dignissim lacus, non vestibulum velit facilisis in.</p>
+		            </div>
+		            <div class="tes-cot">
+		                <div class="feedback">
+		                    <img src="images/img-1.jpg">
+		                    <div class="ttkh">
+		                        <h4>KEN NORMAN <i class="icon bi-twitter"></i></h4>
+		                        <small>@kennorman</small>
+		                    </div>
+		                </div>
+		                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+		                    In iaculis dignissim lacus, non vestibulum velit facilisis in.</p>
+		            </div>
+		            <div class="tes-cot">
+		                <div class="feedback">
+		                    <img src="images/img-2.jpg">
+		                    <div class="ttkh">
+		                        <h4>KARIAN NICK <i class="icon bi-twitter"></i></h4>
+		                        <small>@kariannick</small>
+		                    </div>
+		                </div>
+		                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+		                    In iaculis dignissim lacus, non vestibulum velit facilisis in.</p>
+		            </div>
+		            <div class="tes-cot">
+		                <div class="feedback">
+		                    <img src="images/img-3.jpg">
+		                    <div class="ttkh">
+		                        <h4>DIARA JAMES <i class="icon bi-twitter"></i></h4>
+		                        <small>@diarajames</small>
+		                    </div>
+		                </div>
+		                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+		                    In iaculis dignissim lacus, non vestibulum velit facilisis in.</p>
+		            </div>
+		        </div>
+			</div>
+		</div>
+
+
+		<footer id="footer">
+			<img src="images/footer-img.png" class="footer-img">
+	        <div class="title">
+	            <p>CONTACT</p>
+	            <h1>Visit Studio Today</h1>
+	        </div>
+	        <div class="footer-hang">
+	            <div class="footer-left">
+	                <h1>Openning Hours</h1>
+	                <p><i class="icon bi-clock"></i>Monday to Friday - 9am to 9pm</p>
+	                <p><i class="icon bi-clock"></i>Satuday to Sunday - 8am to 11pm</p>
+	            </div>
+	            <div class="footer-right">
+	                <h1>Get In Touch</h1>
+	                <p>#30 abc Colony, xyz City IN <i class="icon bi-geo-alt"></i></p>
+	                <p>example@website.com <i class="icon bi-paperclip"></i></p>
+	                <p>+01 123456789 <i class="icon bi-phone"></i></p>
+	            </div>
+	        </div>
+	        <div class="mangxh">
+	            <i class="icon bi-facebook"></i>
+	            <i class="icon bi-instagram"></i>
+	            <i class="icon bi-twitter"></i>
+	            <i class="icon bi-youtube"></i>
+	            <p>Copyright Easy Tutorials Youtube Chanel</p>
+	        </div>
+		</footer>
+	</div>
+</body>
+</html>
